@@ -1,6 +1,13 @@
 The general idea I'm trying to flesh out is a REST-style, jQuery-driven application. The main screen is statuses.html, which should load statuses.js and start looking for new statuses. Each status it finds is put into statusAndReplies.html/reply.html. (I'm still deciding whether a status is a separate entity from a reply.) JSON is the preferred data format.
 
+Off the top of my head, we would need to support the following endpoints:
+/login GET and POST
+/status POST
+/reply POST
+/statuses GET
+
 If you have any alterations, please let me know. I don't want to make this any more complicated than it should be, but it might be easiest to share frontend code with this level of decoupling.
 
+Also, if you want to do yours differently, that's fine too.
 
 If we have time, I'd like to explore an idea I had as well. If you are familiar with force directed graphs, you'll have a good idea of what I have in mind. We could show clusters of floating avatars engaged in conversations. Hovering near the conversation might show replies, otherwise a subject or the original status update might appear to give some context to the user.
