@@ -1,19 +1,13 @@
 (ns com.cwfreeman.language-shootout.core
   (:use
+        [com.cwfreeman.language-shootout.statuses]
         [compojure.core :only (defroutes GET)])
   (:require
             [compojure.route :as route]
             [ring.adapter.jetty :as ring]
-            [clojure.contrib.json :as json]
             )
 )
 
-
-(defn get-statuses [req]
-  (json/json-str
-    [
-     {:text "I am awake" :name "Bob" :date :now}
-     {:text "I am asleep" :name "Bob" :date :earlier}]))
 
 (def four-oh-four "<html><head><title>404</title><head><body>You can't go there</body></html>")
 
