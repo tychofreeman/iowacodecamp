@@ -4,13 +4,14 @@
   (:require
             [compojure.route :as route]
             [ring.adapter.jetty :as ring]
+            [clojure.contrib.json :as json]
             )
 )
 
 
 (defn get-statuses [req]
-  (.toString
-    [req
+  (json/json-str
+    [
      {:text "I am awake" :name "Bob" :date :now}
      {:text "I am asleep" :name "Bob" :date :earlier}]))
 
