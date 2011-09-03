@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d5292dc-5313-42af-b11e-41015f5ec9e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../project.clj" afterPath="$PROJECT_DIR$/../project.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/com/cwfreeman/language_shootout/core.clj" afterPath="$PROJECT_DIR$/../src/com/cwfreeman/language_shootout/core.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/com/cwfreeman/language_shootout/statuses.clj" afterPath="$PROJECT_DIR$/../src/com/cwfreeman/language_shootout/statuses.clj" />
     </list>
     <ignored path="clojure.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,19 +73,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project.clj" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="project.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../project.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="22" selection-start="893" selection-end="893" vertical-scroll-proportion="0.44850498">
+            <state line="20" column="0" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="core.clj" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="core.clj" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../src/com/cwfreeman/language_shootout/core.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="54" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
+            <state line="27" column="24" selection-start="768" selection-end="768" vertical-scroll-proportion="0.23642732">
               <folding />
             </state>
           </provider>
@@ -93,7 +94,7 @@
       <file leaf-file-name="statuses.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../src/com/cwfreeman/language_shootout/statuses.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="34" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
+            <state line="7" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,9 +114,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../src/com/cwfreeman/language_shootout/core.clj" />
-        <option value="$PROJECT_DIR$/../src/com/cwfreeman/language_shootout/statuses.clj" />
         <option value="$PROJECT_DIR$/../project.clj" />
+        <option value="$PROJECT_DIR$/../src/com/cwfreeman/language_shootout/statuses.clj" />
+        <option value="$PROJECT_DIR$/../src/com/cwfreeman/language_shootout/core.clj" />
       </list>
     </option>
   </component>
@@ -401,12 +402,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1917" y="0" width="1926" height="1082" extended-state="6" />
-    <editor active="true" />
+    <frame x="-3" y="24" width="1926" height="1034" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34753364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17263496" sideWeight="0.67021275" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17263496" sideWeight="0.67152464" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -419,8 +420,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10796366" sideWeight="0.67021275" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10796366" sideWeight="0.67152464" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847533" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -476,20 +477,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../src/com/cwfreeman/language_shootout/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="54" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../src/com/cwfreeman/language_shootout/statuses.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="34" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../src/main.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
@@ -499,7 +486,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../project.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="893" selection-end="893" vertical-scroll-proportion="0.44850498">
+        <state line="20" column="0" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../src/com/cwfreeman/language_shootout/statuses.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../src/com/cwfreeman/language_shootout/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="24" selection-start="768" selection-end="768" vertical-scroll-proportion="0.23642732">
           <folding />
         </state>
       </provider>
