@@ -7,7 +7,7 @@
                  [ring/ring-core "0.3.11"]
                  [ring/ring-jetty-adapter "0.3.11"]
                  [sandbar/sandbar "0.4.0-SNAPSHOT"]
-                 [postgresql/postgresql "8.4-702.jdbc4"]
+                 [com.h2database/h2 "1.3.159"]
                  [org.clojure/java.jdbc "0.0.3-SNAPSHOT"]
                            ]
             :dev-dependencies [
