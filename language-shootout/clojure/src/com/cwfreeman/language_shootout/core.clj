@@ -30,7 +30,7 @@
 
 
 (defn four-oh-four [req]
-  (str "You can't go there - " req " duh"))
+  (str "404 - You can't go there - " req " duh"))
 
 (def login-screen
   (str  "<html>"
@@ -47,11 +47,12 @@
     ))
 
 (defn am-i-logged-in [p]
-  (println p))
+  (println p)
+  "<html><body>Logged In!!</body></html>")
 
 (defroutes routes
   (GET "/login" [] login-screen)
-  (POST "/login" {params :params} (am-i-logged-in :params))
+  (POST "/login" {params :params} (am-i-logged-in params))
   (GET "/statuses" [] (json/json-str (get-statuses)))
   (GET "/replies/status=:id" [id] (json/json-str (get-replies (Integer/parseInt id))))
   (POST "/status" {params :params} (json/json-str (add-status params)))
