@@ -1,6 +1,7 @@
 (ns com.cwfreeman.language-shootout.core
   (:use
         [com.cwfreeman.language-shootout.statuses]
+        [com.cwfreeman.language-shootout.db]
         [compojure.core :only (defroutes GET PUT POST)]
 )
   (:require
@@ -20,13 +21,14 @@
 (def security-policy
   [
     #"/login" #{:any}
-    #".*" #{:any}
+    #"/statuses" #{:any}
+    #".*" #{:admin}
     ])
 
 ; this can be expanded to do whatever you want. :name and :roles are required, though.
 (defn auth-fn [request]
-  (println "auth-fn...")
-  {:name "Bob" :roles [:any]})
+  (println "auth-fn... for " request)
+  (find-user [auth/current-username]))
 
 
 (defn four-oh-four [req]
@@ -47,13 +49,12 @@
     ))
 
 (defn am-i-logged-in [p]
-  (println p)
   "<html><body>Logged In!!</body></html>")
 
 (defroutes routes
   (GET "/login" [] login-screen)
   (POST "/login" {params :params} (am-i-logged-in params))
-  (GET "/statuses" [] (json/json-str (get-statuses)))
+  (GET "statuses" [] (json/json-str (get-statuses)))
   (GET "/replies/status=:id" [id] (json/json-str (get-replies (Integer/parseInt id))))
   (POST "/status" {params :params} (json/json-str (add-status params)))
   (GET "/status/:id" [id] (json/json-str (get-status (Integer/parseInt id))))
@@ -66,10 +67,10 @@
 
 (def app (-> routes
            (auth/with-security security-policy auth-fn) ; this MUST precede wrap-stateful-session
-           ss/wrap-stateful-session
            params/wrap-params
+           ss/wrap-stateful-session
            ))
 
 (defn start [port]
-    (ring/run-jetty app {:port (or port 80) :join? false})
-  (println "All done"))
+    (println "Starting jetty...")
+    (ring/run-jetty app {:port (or port 80) :join? false}))
